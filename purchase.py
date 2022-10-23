@@ -1,3 +1,5 @@
+import datetime
+
 class Purchase:
  
     
@@ -11,6 +13,12 @@ class Purchase:
  
 
 p1 = Purchase()
+
+#ask user to enter date, YYYY-MM-DD
+pDate = input("Enter the purchase date in YYYY-MM-DD format:\n"
+year,  month, day = map(int, pDate.split('-'))
+date = datetime.date(year, month, day)
+
 
 class User_details:
     name = ""
